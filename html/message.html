@@ -3,57 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ข้อความของเพื่อน</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-            padding: 50px;
-        }
-        .container {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-            margin: auto;
-        }
-        button {
-            margin-top: 20px;
-            padding: 10px;
-            width: 90%;
-        }
-    </style>
-    <script>
-        function showMessage() {
-            const user = localStorage.getItem('loggedInUser');
-            const messages = {
-                "Alice": "ขอบคุณที่อยู่เคียงข้างฉันเสมอ ฉันโชคดีที่มีเธอเป็นเพื่อน!",
-                "Bob": "ขอบคุณที่อยู่ด้วยกันมาตลอดนะ!",
-                "Charlie": "ฉันซาบซึ้งในมิตรภาพของเรา หวังว่าเราจะเป็นเพื่อนกันตลอดไป!",
-                "David": "ขอบคุณที่คอยสนับสนุนฉัน ฉันให้ค่ากับมิตรภาพของเราเสมอ!",
-                "Eve": "เธอคือเพื่อนที่ยอดเยี่ยม ฉันมีความสุขที่ได้รู้จักเธอ!"
-            };
-
-            if (messages[user]) {
-                document.getElementById("message").innerText = messages[user];
-            } else {
-                window.location.href = "index.html"; 
-            }
-        }
-
-        function logout() {
-            localStorage.clear();
-            window.location.href = "index.html";
-        }
-    </script>
+    <title>ข้อความของคุณ</title>
+    <link rel="stylesheet" href="message.css">
 </head>
-<body onload="showMessage()">
-    <div class="container">
-        <h2>ข้อความสำหรับคุณ</h2>
-        <p id="message">กำลังโหลด...</p>
-        <button onclick="logout()">ออกจากระบบ</button>
-    </div>
+<body class="message-bg">
+
+<div class="message-container">
+    <h2>🌿 สวัสดี <span id="username">เพื่อน</span> 🌱</h2>
+    <p id="personal-message">กำลังโหลดข้อความของคุณ...</p>
+    <button onclick="logout()">ออกจากระบบ</button>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
+

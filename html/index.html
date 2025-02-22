@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ล็อกอินเพื่อน</title>
+    <link rel="stylesheet" href="index.css">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,7 +30,7 @@
     <script>
         function login() {
             const username = document.getElementById('username').value;
-            const validUsers = ["Alice", "Bob", "Charlie", "David", "Eve"];
+            const validUsers = ["Prem", "Pang", "Milk", "Mook", "Tong"];
 
             if (validUsers.includes(username)) {
                 localStorage.setItem('loggedInUser', username);
@@ -44,6 +46,9 @@
         <h2>ล็อกอิน</h2>
         <input type="text" id="username" placeholder="กรอกชื่อของคุณ">
         <button onclick="login()">เข้าสู่ระบบ</button>
+    </div>
+    <div>
+        <script src="script.js"></script>
     </div>
 </body>
 </html>
