@@ -162,36 +162,7 @@ input, button {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* เงา */
 }
 
-h2 {
-    text-align: center;
-    color: #2E8B57; /* สีเขียว */
-}
 
-p {
-    text-align: justify; /* จัดข้อความให้สวย */
-    line-height: 1.8; /* เพิ่มระยะห่างระหว่างบรรทัด */
-    color: #006400; /* สีเขียวเข้ม */
-    padding: 10px;
-}
-    body {
-    overflow-x: hidden; /* ป้องกันการเลื่อนซ้ายขวา */
-}
-
-.container {
-    max-width: 90%; /* ลดความกว้างลง */
-    margin: auto;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-p {
-    word-wrap: break-word; /* ทำให้ข้อความขึ้นบรรทัดใหม่อัตโนมัติ */
-    text-align: justify;
-    font-size: 18px;
-    line-height: 1.8;
-}
 
 
 
