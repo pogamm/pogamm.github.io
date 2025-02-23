@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ล็อกอินเพื่อน</title>
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            padding: 50px;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin: auto;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 90%;
+        }
+    </style>
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const validUsers = ["Prem", "Pang", "Milk", "Mook",];
+
+            if (validUsers.includes(username)) {
+                localStorage.setItem('loggedInUser', username);
+                window.location.href = "index1.html"; 
+            } else {
+                alert("ชื่อไม่ถูกต้อง กรุณาลองอีกครั้ง!");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>ล็อกอิน</h2>
+        <input type="text" id="username" placeholder="กรอกชื่อของคุณ">
+        <button onclick="login()">เข้าสู่ระบบ</button>
+    </div>
+    <div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
