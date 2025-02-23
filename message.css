@@ -101,68 +101,6 @@ button:hover {
     background: linear-gradient(45deg, #E65100, #BF360C);
     transform: scale(1.05);
 }
-.container {
-    margin-top: 80px; /* ปรับค่าตามความสูงของแถบด้านบน */
-    padding: 20px;
-    text-align: center;
-}
-/* ✅ ป้องกันเนื้อหาเกินขอบจอ */
-body {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden; /* ป้องกันการเลื่อนแนวนอน */
-    font-family: Arial, sans-serif;
-}
-
-/* ✅ กำหนดให้ container แสดงผลสวยงามทุกขนาดจอ */
-.container {
-    max-width: 90%; /* ลดขนาด container เพื่อไม่ให้เกินขอบจอ */
-    margin: auto;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-/* ✅ ปรับ input และปุ่มให้พอดีกับหน้าจอ */
-input, button {
-    width: 100%; /* ป้องกันขอบขวาถูกบัง */
-    max-width: 300px; /* กำหนดขนาดสูงสุด */
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-/* ✅ ปรับหน้า Message */
-#user-image {
-    max-width: 100%; /* ให้รูปไม่เกินขนาดจอ */
-    height: auto;
-    border-radius: 10px;
-}
-
-/* ✅ ทำให้รองรับมือถือ */
-@media (max-width: 768px) {
-    .container {
-        max-width: 95%;
-        padding: 15px;
-    }
-    body {
-    margin: 0;
-    padding: 0;
-    font-family: "TH Sarabun New", sans-serif;
-    background-color: #f0fff0; /* สีเขียวอ่อน */
-}
-
-.container {
-    max-width: 90%; /* ปรับให้เนื้อหาไม่เต็ม 100% ของหน้าจอ */
-    margin: auto; /* จัดให้อยู่กึ่งกลาง */
-    padding: 20px;
-    background: white; /* พื้นหลังข้อความเป็นสีขาว */
-    border-radius: 15px; /* มุมโค้ง */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* เงา */
-}
-
-
 
 
 
