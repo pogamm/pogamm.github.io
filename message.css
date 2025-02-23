@@ -106,3 +106,45 @@ button:hover {
     padding: 20px;
     text-align: center;
 }
+/* ✅ ป้องกันเนื้อหาเกินขอบจอ */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* ป้องกันการเลื่อนแนวนอน */
+    font-family: Arial, sans-serif;
+}
+
+/* ✅ กำหนดให้ container แสดงผลสวยงามทุกขนาดจอ */
+.container {
+    max-width: 90%; /* ลดขนาด container เพื่อไม่ให้เกินขอบจอ */
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* ✅ ปรับ input และปุ่มให้พอดีกับหน้าจอ */
+input, button {
+    width: 100%; /* ป้องกันขอบขวาถูกบัง */
+    max-width: 300px; /* กำหนดขนาดสูงสุด */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* ✅ ปรับหน้า Message */
+#user-image {
+    max-width: 100%; /* ให้รูปไม่เกินขนาดจอ */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ✅ ทำให้รองรับมือถือ */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 15px;
+    }
+}
+
