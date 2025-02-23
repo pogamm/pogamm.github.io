@@ -101,4 +101,8 @@ button:hover {
     background: linear-gradient(45deg, #E65100, #BF360C);
     transform: scale(1.05);
 }
-
+.container {
+    margin-top: 80px; /* ปรับค่าตามความสูงของแถบด้านบน */
+    padding: 20px;
+    text-align: center;
+}
